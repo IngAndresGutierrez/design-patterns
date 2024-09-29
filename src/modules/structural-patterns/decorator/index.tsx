@@ -1,13 +1,7 @@
 import React, { useState } from "react"
+
 import withLoading from "./withLoading.tsx"
-
-interface DataProps {
-  data: string
-}
-
-const DataComponent = ({ data }: DataProps) => {
-  return <div>Data: {data}</div>
-}
+import DataComponent from "./DataComponent.tsx"
 
 const DecoratorMain = () => {
   const [isLoading, setIsLoading] = useState(true)

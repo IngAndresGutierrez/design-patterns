@@ -1,10 +1,7 @@
 import React from "react"
 
 import withAuth from "./withAuth.tsx"
-
-const Dashboard = () => {
-  return <div>Welcome to your dashboard!</div>
-}
+import Dashboard from "./Dashboard.tsx"
 
 const ProxyMain = () => {
   const isAuthenticated = false

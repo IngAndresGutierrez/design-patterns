@@ -21,6 +21,13 @@ function App() {
         >
           Structurals Patterns
         </a>
+        <a
+          className="App-link"
+          href="/behavior"
+          rel="noopener noreferrer"
+        >
+          Behavior Patterns
+        </a>
       </header>
     </div>
   )

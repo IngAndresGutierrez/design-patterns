@@ -1,18 +1,9 @@
 import React, { useState } from "react"
 
 import FormBuilder from "./FormBuilder.tsx"
+import FormComponent from "./FormComponent.tsx"
 
-const FormComponent = ({ title, buttonText, withFooter }: any) => {
-  return (
-    <div>
-      {title && <h4>{title}</h4>}
-      <button>{buttonText || "Submit"}</button>
-      {withFooter && <footer>Footer Content</footer>}
-    </div>
-  )
-}
-
-const App = () => {
+const BuilderMain = () => {
   const [formConfig, setFormConfig] = useState<any>(null)
 
   const handleBuildForm = () => {
@@ -34,4 +25,4 @@ const App = () => {
   )
 }
 
-export default App
+export default BuilderMain
